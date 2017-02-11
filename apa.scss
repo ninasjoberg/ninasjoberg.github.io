@@ -1,26 +1,35 @@
 /*npm run compile, detta är inte watc utan tittar bara en gång, kör när du är klar innan du stänger ner!*/
+@font-face {
+    font-family: 'sansitaregular';
+    src: url('../Fonts/sansita-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/sansita-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'roboto_condensedlight';
+    src: url('../Fonts/robotocondensed-light-webfont.woff2') format('woff2'),
+         url('../Fonts/robotocondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+$heading-font: 'sansitaregular';
+$paragraf-font: 'roboto_condensedlight';
+
 
 body{
 	background-image: url("../img/background_1200.jpg");
 	background-size: 100% auto;
-	transition: width 2s;
-	//animation-duration: 3s;
-  	//animation-name: slidein;
   	height: 100%;
   	width: 100%;
   	margin: 0 auto;
 }
-
-@keyframes slidein {
-	from {
-	    opacity: 0;
-	}
-
-	to {
-	 opacity: 1;
-	}
-}
-
 
 html{
 	font-size: 16px;
@@ -32,11 +41,13 @@ h1{
 }
 
 h2{
+	font-family: $paragraf-font;
 	font-size: 2rem; 
 	margin: 0;
 }
 
 p{
+	font-family: $paragraf-font;
 	font-size: 1.2rem; 
 }
 
@@ -64,27 +75,22 @@ nav{
 	} 
 }
 
-.middle-section{
+.main-content{
+	background: rgba(255, 255, 255, 0.8);
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	margin-top: 15%;
-	//padding-top: 10rem; /*kan man göra så att detta blir mer responsivt? */
+	margin: 5%;
 }
 
-.middle{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 5%;
+.first-page{
+	margin-top: 15%;
 }
+
 
 .projects{
-	width: 90%;
 	display: flex;
 	justify-content: space-around;
-	margin: 0 6rem;
-	padding: 2rem 0;
 }
 
 .img-project{
@@ -93,6 +99,7 @@ nav{
 	padding: 1rem;
 	background-color: white;
 	display: flex;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.07);
 }
 
 .box{
@@ -109,23 +116,22 @@ nav{
 	opacity: 0;
 	transition: all 0.3s ease-in;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
+	p{
+		margin: 0.5rem 1rem;
+	}
+	a{
+		margin-top: 0.5rem;
+	}
 	&:hover {
 		transition: all 0.3s ease-out;
-		opacity: 0.9;
+		opacity: 0.95;
 	}	
 }
 
-.about-section{
-	width: 50rem;
-	display: flex;
-	flex-direction: column;
-	background-color: white;
-	opacity: 0.8;
-	padding: 2rem;
-	text-align: center;
-}
+
 
 .icon_contact{
 	display: flex;
@@ -135,4 +141,7 @@ nav{
 	}	
 }
 
+.about-section{
+	padding: 0 10rem;
+}
 
