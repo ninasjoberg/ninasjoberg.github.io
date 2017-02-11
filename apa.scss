@@ -1,7 +1,138 @@
-body {
-	heigth: 10px;
+/*npm run compile, detta är inte watc utan tittar bara en gång, kör när du är klar innan du stänger ner!*/
+
+body{
+	background-image: url("../img/background_1200.jpg");
+	background-size: 100% auto;
+	transition: width 2s;
+	//animation-duration: 3s;
+  	//animation-name: slidein;
+  	height: 100%;
+  	width: 100%;
+  	margin: 0 auto;
 }
 
-.apa {
-	color: black;
+@keyframes slidein {
+	from {
+	    opacity: 0;
+	}
+
+	to {
+	 opacity: 1;
+	}
 }
+
+
+html{
+	font-size: 16px;
+}
+
+h1{
+	font-size: 5rem; 
+	margin: 1rem;
+}
+
+h2{
+	font-size: 2rem; 
+	margin: 0;
+}
+
+p{
+	font-size: 1.2rem; 
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.5rem;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-text{
+	display: flex;
+	align-items: center;
+	margin: 2rem 3rem; 
+}
+
+.nav-icon{
+	margin: 2rem 3rem;
+	a{
+		margin-left: 1rem;
+	} 
+}
+
+.middle-section{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 15%;
+	//padding-top: 10rem; /*kan man göra så att detta blir mer responsivt? */
+}
+
+.middle{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5%;
+}
+
+.projects{
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 6rem;
+	padding: 2rem 0;
+}
+
+.img-project{
+	width: 20rem;
+	height: 20rem;
+	padding: 1rem;
+	background-color: white;
+	display: flex;
+}
+
+.box{
+	position: relative;
+}
+
+.hover-box {
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	background: #FFF;
+	opacity: 0;
+	transition: all 0.3s ease-in;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	&:hover {
+		transition: all 0.3s ease-out;
+		opacity: 0.9;
+	}	
+}
+
+.about-section{
+	width: 50rem;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	opacity: 0.8;
+	padding: 2rem;
+	text-align: center;
+}
+
+.icon_contact{
+	display: flex;
+	justify-content: center;
+	a{
+		margin: 0 1rem;
+	}	
+}
+
+
