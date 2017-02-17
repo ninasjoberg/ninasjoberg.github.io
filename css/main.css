@@ -13,7 +13,6 @@
   font-style: normal; }
 
 body {
-  background-image: url("../img/background_1200.jpg");
   background-size: 100% auto;
   height: 100%;
   width: 100%;
@@ -21,6 +20,9 @@ body {
 
 html {
   font-size: 16px; }
+
+header {
+  background-color: lightsalmon; }
 
 h1 {
   font-size: 5rem;
@@ -59,18 +61,19 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 5%; }
+  margin: 4%; }
 
 .first-page {
-  margin-top: 15%; }
+  margin-top: 15%;
+  text-align: center; }
 
 .projects {
   display: flex;
   justify-content: space-around; }
 
 .img-project {
-  width: 20rem;
-  height: 20rem;
+  width: 80%;
+  min-width: 15rem;
   padding: 1rem;
   background-color: white;
   display: flex;
@@ -104,7 +107,49 @@ nav {
   display: flex;
   justify-content: center; }
   .icon_contact a {
-    margin: 0 1rem; }
+    margin: 1rem; }
 
 .about-section {
-  padding: 0 10rem; }
+  display: flex;
+  flex-direction: row; }
+
+.about-box {
+  width: 25%;
+  padding: 2rem;
+  border: 1px solid black;
+  margin-bottom: 4rem; }
+
+.row {
+  display: flex; }
+
+.box-about {
+  width: 40%;
+  justify-content: center;
+  border: 1px solid black; }
+  .box-about img {
+    max-width: 40rem; }
+
+.info {
+  display: none; }
+
+.active {
+  opacity: 1; }
+
+.frontend {
+  margin: 5rem 15rem; }
+
+.climbing-img {
+  width: 4rem; }
+
+@media screen and (max-width: 800px) {
+  .projects {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 1200px) {
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .img-project {
+    width: 40%; } }
