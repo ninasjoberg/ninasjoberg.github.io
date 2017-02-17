@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Ninas portfolio</title>
+	<title>frontend by Nina</title>
 	<script src="https://use.fontawesome.com/aa9919c7e7.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
@@ -14,7 +14,7 @@
 				<figure>|</figure>
 				<a href="projekt.html">Projekt</a> 
 				<figure>|</figure>
-				<a href="about.html">Om mig</a> 	
+				<a href="about.html" class="nav-active">Om mig</a> 	
 			</section>
 			<section class="nav-icon">
 				<a href="https://github.com/ninasjoberg" target="_blank">
@@ -27,22 +27,49 @@
 		</nav>
 	</header>
 	<section class="main-content">
-		<h1>Om mig</h1>
-		<article class="about-section">
-			<p>Mitt namn är Nina, jag är en kreativ person som älskar att skapa och bygga saker vilket jag verkligen får utlopp för under denna utbildning och förhoppningsvis i framtida jobb. Jag upptäckte utveckling rätt sent men känner att det passar mig perfekt. 
-			<br>	
-			Förutom att programmera ägnar jag min tid åt silversmide och klättring. Jag gillar även att segla, åka snowboard och plantera i min trädgård. 
-			</p>
-			<section class="icon_contact">
-				<a href="https://github.com/ninasjoberg" target="_blank">
-					<span class="fa fa-github fa-2x" aria-hidden="true"></span>
-				</a>
-				<a href="https://www.linkedin.com/in/nina-sj%C3%B6berg-9aa71b22/" target="_blank">
-					<span class="fa fa-linkedin-square fa-2x" aria-hidden="true"></span>
-				</a>
+		<div class="row">
+			<section class="box-about">
+				<div class="info visible" id="laptop">
+					<h2>Frontend-developer</h2>
+					<p>Jag pluggar till Frontendutvecklare på Nackademin ht16 - vt18. Jag kom in på banan rätt sent men det känns helt rätt för mig. Jag älskar att bygga och skapa saker, jag gillar också problemlösning vilket jag verkligen får utlopp för inom frontend.</p>
+				</div>
+				<div class="info" id="silver">
+					<h2>Silversmide</h2>
+					<p>Jag har en egen silversmidesverkstad hemma. efter en kurs i silversmide fprå två år sedan bvlev jag helt fast, jag tillvetkar och säljer silversmycken i min webshopp bellpepper.se</p>
+				</div>
+				<div class="info" id="climbing">
+					<h2>Klättring</h2>
+					<p>Jag klättrar, ganska ofta. Dock inte ute eller med rep, jag håller till inne i klätterhallen på boulderväggarna</p>
+				</div>
+				<div class="info" id="planting">
+					<h2>odla</h2>
+					<p>Jag gillar att odla sådant man kan äta! jag tycker även om att plantera snygga blommor i min trädgård.</p>
+				</div>
+				<div class="info" id="sailing">
+					<h2>segla</h2>
+					<p>Jag älskar att vara ute i skärgården, där känner jag frihet och lugn. Jag har en segelbåt som är liten och trång men den har tagit med mig på många turer i Östersjön.</p>
+				</div>
 			</section>
-		</article>
+			<section class="box-about">
+				<a href="#" class="icon laptop">
+					<span class="fa fa-laptop fa-4x" aria-hidden="true"></span>
+				</a>	
+				<a href="#" class="icon silver">
+					<img class="anvil-img" src="../img/anvil.svg">
+				</a>	
+				<a href="#" class="icon climbing">
+					<img class="climbing-img" src="../img/climbing.ico">
+				</a>
+				<a href="#" class="icon planting">	
+					<span class="fa fa-pagelines fa-3x" aria-hidden="true"></span>
+				</a>
+				<a href="#" class="icon sailing">
+					<img class="anchor-img" src="../img/anchor.svg">
+				</a>
+			</section>	
+		</div>	
 	</section>	
+	<script type="text/javascript" src="../main.js"></script>
 
 </body>
 </html>
