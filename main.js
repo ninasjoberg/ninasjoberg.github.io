@@ -1,54 +1,52 @@
 
+const iconList = document.getElementsByClassName('icon');
+console.log(iconList) 
+//loop through the list ov icons
+for(let i = 0; i < iconList.length; i++) {
+  //get the icon att position i
+  const icon = iconList[i];
+  console.log(icon);
 
 
-var iconEvent = document.getElementsByClassName("event")[2];
-console.log(iconEvent);
-
-iconEvent.addEventListener('click', function(event){
-	event.target.classList.toggle('visible');
-	console.log(event.target);
-})
-
+  //add an eventlistener to that icon
+  icon.addEventListener('click', function(event) {
+    changeContent(event);
+    // event.target is the icon that was clicked
+    // take the second class and use it to get 
+    // the corresponding info div by id
+    console.log(event);
+    console.log(event.target.parentElement.classList[1]); 
+    const info = document.getElementById(event.target.parentElement.classList[1]);
+    console.log('info, this should be an element:' + info);
+    info.classList.toggle('visible'); 
 
 /*
-function change_boxes() {
-    var boxes = document.getElementsByClassName('boxes'),
-        i = boxes.length;
+    //för att göra iconen gröN.
+    const green = document.getElementById(event.taget);
+    green.classList.toggle('green'); 
+*/    
 
-    while(i--) {
-        boxes[i].style.backgroundColor = "green";
+  });
+}
+/*
+function changeContent(event){
+  laptop.classList.remove('visible'); 
+  silver.classList.remove('visible'); 
+  climbing.classList.remove('visible'); 
+  planting.classList.remove('visible'); 
+  sailing.classList.remove('visible'); 
+}
+*/
+function changeContent(event){
+  const active = document.getElementsByClassName('info');
+    console.log(active);
+    for (let i = 0; i < active.length; i++) {
+      console.log(active);
+      if(active[i].classList.contains('visible')){
+
+        active[i].classList.remove('visible');
+      }
+      console.log(active[i].classList);
     }
 }
-*/
-/*
-var button = document.querySelectorAll("button")[0];
-button.addEventListener('click', function() {
-  if (button.getAttribute("data-text-swap") == button.innerHTML) {
-    button.innerHTML = button.getAttribute("data-text-original");
-  } else {
-    button.setAttribute("data-text-original", button.innerHTML);
-    button.innerHTML = button.getAttribute("data-text-swap");
-  }
-}, false);
-*/
 
-
-
-/*
-function toggleActive(info){
-	var nowActive = document.getElementsByClassName('active');
-	  		console.log(nowActive);
-   	if(nowActive.length){
-		for (var prop in nowActive) {
-	  		console.log(nowActive[prop]);
-
-	  		nowActive[prop].setAttribute('class', '');
-	  	}
-	}
-
-	var infoText = document.getElementById(info);
-	infoText.setAttribute('class', 'active');
-}
-
-console.log('hej');
-*/
