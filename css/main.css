@@ -69,17 +69,19 @@ nav {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  height: 80%; }
+  align-items: center;
+  height: 80%;
+  width: 100%; }
 
 .projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 0 5rem; }
 
 .img-project {
-  width: 20rem;
+  width: 100%;
   padding: 1rem;
   background-color: white;
   display: flex;
@@ -100,9 +102,11 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 0;
   text-align: center; }
   .hover-box p {
-    margin: 0.5rem 1rem; }
+    margin: 0.5rem 2rem; }
   .hover-box a {
     margin-top: 0.5rem; }
   .hover-box:hover {
@@ -115,30 +119,39 @@ nav {
   .icon_contact a {
     margin: 1rem; }
 
-.about-section {
-  display: flex;
-  flex-direction: row; }
-
-.about-box {
-  width: 25%;
-  padding: 2rem;
-  border: 1px solid black;
-  margin-bottom: 4rem; }
-
 .row {
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center;
+  background-color: #87B6A7;
+  width: 45rem; }
 
 .box-about {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
-  width: 40%;
-  border: 1px solid black;
-  background-color: #87B6A7; }
+  align-items: center; }
   .box-about img {
     max-width: 40rem; }
+
+.about-icons {
+  flex-direction: row;
+  padding: 0 0 1rem 0;
+  width: 100%; }
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  height: 6rem;
+  width: 6rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+.about-text {
+  min-height: 15rem;
+  padding: 0 2rem; }
 
 .frontend {
   margin: 5rem 15rem; }
@@ -155,15 +168,100 @@ nav {
 .info {
   display: none; }
 
-.icon {
-  display: inline-block;
-  margin: 1rem; }
-
-.laptop {
-  flex: 1 100%; }
-
 .visible {
   display: inline-block; }
 
-.green {
-  color: green; }
+.pressed {
+  border: 1px solid #694556; }
+
+.projekt-info {
+  align-self: flex-start;
+  width: 40%;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  margin: 2rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.07); }
+
+.white-space {
+  height: 1rem; }
+
+/************************************/
+.background {
+  background-color: #87B6A7;
+  display: flex; }
+
+.timeline ul {
+  margin-top: 0; }
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 1rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  background: #fff; }
+
+/*cirklarna på tidslinjen*/
+.timeline ul li::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: inherit; }
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 18rem; }
+
+.timeline ul li:nth-child(odd) div {
+  left: 4rem; }
+
+.timeline ul li:nth-child(even) div section {
+  left: -21rem; }
+
+.timeline ul li:nth-child(even) div time {
+  margin-left: -7rem; }
+
+/* Små skärmar */
+@media screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    justify-content: center; }
+  .nav-icon {
+    margin: auto auto 1rem auto; }
+  .fa-3x {
+    font-size: 2.5rem; }
+  .nav-text {
+    margin: 1rem auto; }
+  h2 {
+    font-size: 1.5rem; }
+  .icon-img {
+    width: 2.5rem; }
+  .row {
+    width: 85%; }
+  .box-about {
+    width: 100%; }
+  .icon {
+    margin: auto;
+    height: 4rem;
+    width: 4rem; }
+  .timeline {
+    align-items: center; }
+  .timeline ul li {
+    margin: 0;
+    width: 0.5rem; }
+  .timeline ul li:nth-child(even) div section {
+    left: 4rem; }
+  .timeline ul li:nth-child(even) div time {
+    margin-left: 4rem; }
+  .background {
+    flex-direction: column; }
+  .projekt-info {
+    width: 85%;
+    text-align: center; }
+  .img-project {
+    padding: 0.7rem; } }
