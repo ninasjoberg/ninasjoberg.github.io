@@ -12,6 +12,12 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'arapeyregular';
+  src: url("arapey-regular-webfont.woff2") format("woff2"), url("arapey-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
   box-sizing: border-box; }
 
@@ -26,9 +32,10 @@ html {
   height: 100%; }
 
 header {
-  background-color: #694556; }
+  background-color: #C1F0DE; }
 
 h1 {
+  font-family: "arapeyregular";
   font-size: 5rem;
   margin: 1rem; }
 
@@ -82,7 +89,7 @@ nav {
 
 .img-project {
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
   background-color: white;
   display: flex;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.07); }
@@ -123,7 +130,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #CECECE;
+  background-color: #DEDEDF;
   width: 45rem; }
 
 .box-about {
@@ -178,7 +185,7 @@ nav {
   margin: auto;
   width: 45%;
   padding: 1rem 2rem;
-  border: 1rem solid white;
+  border: 0.8rem solid white;
   border-top: none; }
 
 .center {
@@ -187,11 +194,11 @@ nav {
   align-items: center; }
 
 .white-space {
-  height: 1rem; }
+  height: 0.8rem; }
 
 /************************************/
 .background {
-  background-color: #CECECE; }
+  background-color: #DEDEDF; }
 
 .timeline ul {
   margin-top: 0; }
@@ -199,7 +206,7 @@ nav {
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 1rem;
+  width: 0.8rem;
   margin: 0 auto;
   padding-top: 2rem;
   background: #fff; }
