@@ -37,7 +37,7 @@ h2 {
   font-size: 2rem;
   margin: 0; }
 
-p {
+p, time {
   font-family: "roboto_condensedlight";
   font-size: 1.2rem; }
 
@@ -123,7 +123,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #87B6A7;
+  background-color: #CECECE;
   width: 45rem; }
 
 .box-about {
@@ -175,20 +175,23 @@ nav {
   border: 1px solid #694556; }
 
 .projekt-info {
-  align-self: flex-start;
-  width: 40%;
+  margin: auto;
+  width: 45%;
   padding: 1rem 2rem;
-  border: 1px solid black;
-  margin: 2rem;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.07); }
+  border: 1rem solid white;
+  border-top: none; }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .white-space {
   height: 1rem; }
 
 /************************************/
 .background {
-  background-color: #87B6A7;
-  display: flex; }
+  background-color: #CECECE; }
 
 .timeline ul {
   margin-top: 0; }
@@ -264,4 +267,9 @@ nav {
     width: 85%;
     text-align: center; }
   .img-project {
-    padding: 0.7rem; } }
+    padding: 0.7rem; }
+  .projekt-info {
+    border: 0.5rem solid white;
+    border-top: none;
+    text-align: center;
+    margin-left: 2.5rem; } }
