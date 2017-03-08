@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*npm run compile, detta är inte watc utan tittar bara en gång, kör när du är klar innan du stänger ner!*/
 @font-face {
   font-family: 'sansitaregular';
   src: url("../Fonts/sansita-regular-webfont.woff2") format("woff2"), url("../Fonts/sansita-regular-webfont.woff") format("woff");
@@ -80,6 +79,10 @@ nav {
   height: 80%;
   width: 100%; }
 
+.github {
+  font-size: 1.2rem;
+  text-decoration: underline; }
+
 .projects {
   display: flex;
   flex-flow: row wrap;
@@ -130,13 +133,13 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #DEDEDF;
-  width: 45rem; }
+  width: 45rem;
+  border: 1px solid black; }
 
 .box-about {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center; }
   .box-about img {
     max-width: 40rem; }
@@ -151,26 +154,24 @@ nav {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: white;
-  height: 6rem;
-  width: 6rem;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
+  background-color: #DEDEDF;
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem; }
 
 .about-text {
-  min-height: 15rem;
+  min-height: 20rem;
   padding: 0 2rem; }
 
 .frontend {
   margin: 5rem 15rem; }
 
-.climbing-img {
-  width: 4rem; }
+.climbing-img, .anchor-img {
+  width: 2.5rem; }
 
 .anvil-img {
-  width: 5rem; }
-
-.anchor-img {
-  width: 4rem; }
+  width: 3rem;
+  padding-top: 0.5rem; }
 
 .info {
   display: none; }
@@ -179,7 +180,7 @@ nav {
   display: inline-block; }
 
 .pressed {
-  border: 1px solid #694556; }
+  border: 2px solid #e3bec6; }
 
 .projekt-info {
   margin: auto;
@@ -237,7 +238,7 @@ nav {
   margin-left: -7rem; }
 
 /* Små skärmar */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 680px) {
   nav {
     flex-direction: column;
     justify-content: center; }
@@ -258,16 +259,19 @@ nav {
   .icon {
     margin: auto;
     height: 4rem;
-    width: 4rem; }
+    width: 4rem;
+    padding: 1rem; }
   .timeline {
     align-items: center; }
   .timeline ul li {
     margin: 0;
     width: 0.5rem; }
   .timeline ul li:nth-child(even) div section {
-    left: 4rem; }
+    left: 2rem; }
   .timeline ul li:nth-child(even) div time {
-    margin-left: 4rem; }
+    margin-left: 2rem; }
+  .timeline ul li:nth-child(odd) div {
+    left: 2rem; }
   .background {
     flex-direction: column; }
   .projekt-info {
@@ -279,4 +283,9 @@ nav {
     border: 0.5rem solid white;
     border-top: none;
     text-align: center;
-    margin-left: 2.5rem; } }
+    margin-left: 2.5rem; }
+  .about-text {
+    min-height: 20rem;
+    padding: 0 1rem; }
+  figure {
+    margin: 1rem; } }
