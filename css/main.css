@@ -1,40 +1,24 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'sansitaregular';
-  src: url("../Fonts/sansita-regular-webfont.woff2") format("woff2"), url("../Fonts/sansita-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'roboto_condensedlight';
   src: url("../Fonts/robotocondensed-light-webfont.woff2") format("woff2"), url("../Fonts/robotocondensed-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'arapeyregular';
-  src: url("arapey-regular-webfont.woff2") format("woff2"), url("arapey-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 * {
   box-sizing: border-box; }
 
-body {
+html, body {
+  font-size: 16px;
   background-size: 100% auto;
   width: 100%;
   height: 100%;
   margin: 0 auto; }
 
-html {
-  font-size: 16px;
-  height: 100%; }
-
 header {
   background-color: #C1F0DE; }
 
 h1 {
-  font-family: "arapeyregular";
   font-size: 5rem;
   margin: 1rem; }
 
@@ -70,7 +54,6 @@ nav {
     margin-left: 1rem; }
 
 .main-content {
-  background: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   text-align: center;
