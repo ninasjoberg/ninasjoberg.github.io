@@ -19,6 +19,7 @@ $paragraf-font: 'roboto_condensedlight';
 $heading-font: 'thinregular';
 
 $primary-color: #E1D9D1;
+$secondary-color: #887ec9;
 
 
 *{
@@ -49,6 +50,7 @@ a{
 }
 
 nav{
+	border-top: 10px solid $secondary-color;
 	display: flex;
 	justify-content: space-between;
 }
@@ -57,7 +59,7 @@ nav{
 	font-family: $heading-font;
 	display: flex;
 	align-items: center;
-	margin: 2rem 3rem; 
+	margin: 1rem 3rem; 
 	a{
 		margin-right: 4rem;
 	}
@@ -83,6 +85,7 @@ nav{
 	height: 80%;
 	width: 100%;
 }
+
 
 /* Hem */
 
