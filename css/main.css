@@ -34,6 +34,7 @@ a {
   font-size: 1.5rem; }
 
 nav {
+  border-top: 10px solid #887ec9;
   display: flex;
   justify-content: space-between; }
 
@@ -41,7 +42,7 @@ nav {
   font-family: "thinregular";
   display: flex;
   align-items: center;
-  margin: 2rem 3rem; }
+  margin: 1rem 3rem; }
   .nav-text a {
     margin-right: 4rem; }
 
