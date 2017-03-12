@@ -287,7 +287,6 @@ nav{
 @media screen and (max-width: 680px){
 
 	nav{
-		flex-direction: column;
 		justify-content: center;
 	}
 
@@ -295,12 +294,23 @@ nav{
 		margin: auto auto 1rem auto;
 	}
 
-	.fa-3x {
-    	font-size: 2.5rem;
+	.fa-2x{
+    	font-size: 2rem;
     }	
 
 	.nav-text{
-		margin: 1rem auto; 
+		margin: auto;
+		a{
+			margin: 1rem;
+		}
+	}
+
+	.front{
+		font-size: 8rem; 
+	}
+
+	.pres{
+		font-size: 1.2rem; 
 	}
 
 	h2{
@@ -326,12 +336,13 @@ nav{
 		padding:1rem;
 	}
 
+
 	.timeline{
-		align-items: center;
+		margin-top: 4rem;
 	}
 
 	.timeline ul li{
-		margin: 0;
+		margin-left: 1rem;
 		width: 0.5rem;
 	}
 
@@ -351,25 +362,29 @@ nav{
 		flex-direction: column;
 	}
 
-	.projekt-info{
-		width: 85%;
-		text-align: center;
-	}
-
 	.img-project{
 		padding: 0.7rem;
 	}	
 
 	.projekt-info{
 		border: 0.5rem solid white;
-		border-top: none;
+		width: auto;
 		text-align: center;
-		margin-left: 2.5rem;
+		margin: auto 1rem ;
 	}
 
 	.about-text{
 		min-height: 20rem;
 		padding: 0 1rem;
+	}
+
+	.climbing-img, .anchor-img{
+		width: 2rem;
+	}
+
+	.anvil-img{
+		width: 2.2rem;
+		padding-top: 0.5rem;
 	}
 
 	figure{
