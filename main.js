@@ -9,6 +9,23 @@ function randomColor(colordiv, colors){
 }
 
 
+function changeContent(event){
+  const active = document.getElementsByClassName('info');
+  for (let i = 0; i < active.length; i++) {
+    if(active[i].classList.contains('visible')){
+      active[i].classList.remove('visible');
+    }
+  }
+}
+
+function changeActiveIcon(event, icons){
+  for (let i = 0; i < icons.length; i++) {
+    if(icons[i].classList.contains('pressed')){
+      icons[i].classList.remove('pressed');
+    }
+  }
+}
+
 for(let i = 0; i < iconList.length; i++) {
   const icon = iconList[i];
   icon.addEventListener('click', function(event) {
@@ -28,27 +45,9 @@ for(let i = 0; i < iconList.length; i++) {
   });
 }
 
-function changeContent(event){
-  const active = document.getElementsByClassName('info');
-  for (let i = 0; i < active.length; i++) {
-    if(active[i].classList.contains('visible')){
-      active[i].classList.remove('visible');
-    }
-  }
-}
-
-function changeActiveIcon(event, icons){
-  for (let i = 0; i < icons.length; i++) {
-    if(icons[i].classList.contains('pressed')){
-      icons[i].classList.remove('pressed');
-    }
-  }
-}
-
-
 
 randomColor(colordiv, colors);
 
 setInterval(function(){
   randomColor(colordiv, colors)
-}, 2500);
+}, 3000);
