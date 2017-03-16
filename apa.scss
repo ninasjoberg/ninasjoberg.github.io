@@ -19,7 +19,6 @@ $paragraf-font: 'roboto_condensedlight';
 $heading-font: 'thinregular';
 
 $primary-color: #E1D9D1;
-$secondary-color: #887ec9;
 
 
 *{
@@ -50,13 +49,13 @@ a{
 }
 
 nav{
-	//border-top: 10px solid $secondary-color;
 	display: flex;
 	justify-content: space-between;
 }
 
 #colordiv{
 	height: 0.8rem;
+	transition: background-color ease 2s;
 }
 
 .nav-text{
@@ -148,7 +147,7 @@ nav{
 	bottom: 0rem;
 	background: #FFF;
 	opacity: 0;
-	transition: all 0.3s ease-in;
+	transition: all 0.5s ease-in;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
