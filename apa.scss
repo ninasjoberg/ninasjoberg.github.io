@@ -50,9 +50,13 @@ a{
 }
 
 nav{
-	border-top: 10px solid $secondary-color;
+	//border-top: 10px solid $secondary-color;
 	display: flex;
 	justify-content: space-between;
+}
+
+#colordiv{
+	height: 0.8rem;
 }
 
 .nav-text{

@@ -1,16 +1,19 @@
-
+const colordiv = document.getElementById('colordiv');
 const iconList = document.getElementsByClassName('icon');
-//loop through the list of icons
+const colors = ['#344E41', '#2E6078', '#7BA098', '#9B97B2', '#73A6AD', '#B08EA2', '#C46D5E', '#9E4770', '#BCFFDB'];
+
+
+function randomColor(colordiv, colors){
+  let color = colors[Math.floor(Math.random()*colors.length)];
+  colordiv.style.backgroundColor = color;
+}
+
+
 for(let i = 0; i < iconList.length; i++) {
-  //get the icon at position i
   const icon = iconList[i];
-  //add an eventlistener to that icon
   icon.addEventListener('click', function(event) {
     changeContent(event);
     changeActiveIcon(event, iconList);
-    // event.target is the icon that was clicked
-    // take the second class and use it to get 
-    // the corresponding info div by id
     let linkElement = ''; 
     if(event.target.classList.contains('icon')){
       linkElement = event.target;
@@ -25,7 +28,6 @@ for(let i = 0; i < iconList.length; i++) {
   });
 }
 
-
 function changeContent(event){
   const active = document.getElementsByClassName('info');
   for (let i = 0; i < active.length; i++) {
@@ -35,7 +37,6 @@ function changeContent(event){
   }
 }
 
-
 function changeActiveIcon(event, icons){
   for (let i = 0; i < icons.length; i++) {
     if(icons[i].classList.contains('pressed')){
@@ -44,3 +45,10 @@ function changeActiveIcon(event, icons){
   }
 }
 
+
+
+randomColor(colordiv, colors);
+
+setInterval(function(){
+  randomColor(colordiv, colors)
+}, 2500);
