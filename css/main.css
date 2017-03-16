@@ -34,9 +34,11 @@ a {
   font-size: 1.5rem; }
 
 nav {
-  border-top: 10px solid #887ec9;
   display: flex;
   justify-content: space-between; }
+
+#colordiv {
+  height: 0.8rem; }
 
 .nav-text {
   font-family: "thinregular";
