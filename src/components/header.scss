@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'nunito_sansextralight';
+    src: url('../font_nunito_sans_light/nunitosans-extralight-webfont.woff2') format('woff2'),
+        url('../font_nunito_sans_light/nunitosans-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+    padding: 0 40px;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-icon {
+    align-self: flex-start;
+    padding-top: 50px;
+    position: fixed;
+}
+
+.header-links {
+    font-family: 'nunito_sansextralight';
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: fixed;
+}
+
+.link {
+    transition: all 0.3s ease-out;
+    font-size: 32px;
+    margin: 20px;
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.selected {
+    transition: all 0.3s ease-in;
+    transform: translateX(-75px);
+    color: #74ccb4;
+}
+
+
+/* Små skärmar */
+@media screen and (max-width: 900px) {
+    .header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        background-color: white;
+        justify-content: space-between;
+    }
+
+    .header-links {
+        flex-direction: row;
+    }
+
+    .nav-icon {
+        padding-top: auto;
+        position: relative;
+    }
+}

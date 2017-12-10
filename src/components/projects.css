@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'nunito_sansextralight';
+  src: url("../font_nunito_sans_light/nunitosans-extralight-webfont.woff2") format("woff2"), url("../font_nunito_sans_light/nunitosans-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.projects {
+  background-color: #2c3e50;
+  margin: 0 auto;
+  width: 80%;
+  font-family: 'nunito_sansextralight'; }
+
+.box {
+  position: relative;
+  padding: 0.5rem;
+  background-color: white;
+  width: 100%; }
+
+.img-project {
+  width: 100%;
+  display: flex; }
+
+.hover-box {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  background: #FFF;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center; }
+
+.hover-box p {
+  margin: 0.5rem 2rem; }
+
+.hover-box a {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  text-decoration: underline; }
+
+.hover-box:hover {
+  transition: all 0.5s ease-out;
+  opacity: 0.95; }
+
+/*Timeline*/
+.timeline ul {
+  margin-top: 20px;
+  padding: 0; }
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 0.5rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  background: #fff; }
+
+/*cirklarna på tidslinjen*/
+.timeline ul li::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: inherit; }
+
+.project-wrapper {
+  position: relative;
+  bottom: 0;
+  width: 16rem; }
+  .project-wrapper time {
+    color: #74ccb4; }
+
+.timeline ul li:nth-child(odd) div {
+  left: 4rem; }
+
+.timeline ul li:nth-child(even) div section {
+  left: -20.5rem; }
+
+.timeline ul li:nth-child(even) div time {
+  margin-left: -7.5rem; }
+
+/* Små skärmar */
+@media screen and (max-width: 900px) {
+  .projects {
+    width: 100%; }
+  .timeline {
+    margin-top: 4rem; }
+  .timeline ul li {
+    margin-left: 1rem;
+    width: 0.5rem; }
+  .timeline ul li:nth-child(even) div section {
+    left: 2rem; }
+  .timeline ul li:nth-child(even) div time {
+    margin-left: 2rem; }
+  .timeline ul li:nth-child(odd) div {
+    left: 2rem; } }
