@@ -29,9 +29,8 @@ h2 {
   font-size: 2rem; }
 
 a {
-  text-decoration: none;
   color: black;
-  font-size: 1.5rem; }
+  text-decoration: none; }
 
 nav {
   display: flex;
@@ -47,6 +46,7 @@ nav {
   align-items: center;
   margin: 1rem 3rem; }
   .nav-text a {
+    font-size: 1.5rem;
     margin-right: 4rem; }
 
 .nav-active {
@@ -55,7 +55,9 @@ nav {
 .nav-icon {
   margin: 2rem 3rem; }
   .nav-icon a {
-    margin-left: 1rem; }
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    text-decoration: none; }
 
 .main-content {
   display: flex;
@@ -123,7 +125,9 @@ nav {
     margin: 0.5rem 2rem; }
   .hover-box a {
     margin-top: 0.5rem;
-    font-family: "roboto_condensedlight"; }
+    font-family: "roboto_condensedlight";
+    font-size: 1.2rem;
+    text-decoration: underline; }
   .hover-box:hover {
     transition: all 0.3s ease-out;
     opacity: 0.95; }
@@ -213,8 +217,13 @@ nav {
   width: 3rem;
   padding-top: 0.5rem; }
 
+.fa {
+  font-size: 2.5rem; }
+
 .info {
   display: none; }
+  .info a {
+    text-decoration: underline; }
 
 .visible {
   display: inline-block; }
