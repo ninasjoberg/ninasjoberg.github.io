@@ -15,7 +15,7 @@ export default function Header() {
 				</a>
 			</section>
             <section className="header-links">
-                <NavLink className="link" activeClassName="selected" to="/home">Home</NavLink>
+                <NavLink className="link" exact activeClassName="selected" to="/">Home</NavLink>
                 <NavLink className="link" activeClassName="selected" to="/projects">Projects</NavLink>
                 <NavLink className="link" activeClassName="selected" to="/about">About</NavLink>
             </section>
