@@ -18,6 +18,7 @@ export default class About extends Component{
                         <p><span>odla och plantera snygga växter</span></p>
                         <p><span>bygga och skapa saker</span></p>
                     </div>
+                    <div className="divider-skew"></div>
                     <div className="contact">
                         <h4>Kontakt och mer info:</h4>
                         <a href="https://github.com/ninasjoberg" target="_blank"><span>github</span></a>

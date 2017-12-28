@@ -7,7 +7,6 @@
 
 .about {
   background-color: #2c3e50;
-  height: 100vh;
   width: 80%; }
 
 .about-content {
@@ -15,15 +14,33 @@
   padding: 0 50px;
   font-family: 'nunito_sansextralight';
   display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-between; }
   .about-content h4 {
     color: #74ccb4; }
 
+.divider-skew {
+  width: 15px;
+  height: 100vh;
+  position: fixed;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #275d8d;
+  -ms-transform: skewX(-40deg);
+  /* IE 9 */
+  -webkit-transform: skewX(-40deg);
+  /* Safari */
+  transform: skewX(-40deg);
+  /* Standard syntax */ }
+
+.likes {
+  margin-bottom: 50px; }
+
 .contact {
+  align-self: flex-end;
   display: flex;
   flex-direction: column;
-  text-align: right; }
+  text-align: right;
+  margin-bottom: 10px; }
   .contact a {
     margin-bottom: 16px;
     text-decoration: none; }
@@ -33,4 +50,18 @@
 /* Små skärmar */
 @media screen and (max-width: 900px) {
   .about {
-    width: 100%; } }
+    width: 100%;
+    margin-top: 100px; }
+  .about-content {
+    flex-direction: column;
+    padding: 0 20px; }
+  .divider-skew {
+    top: 30%;
+    -ms-transform: skewX(-62deg);
+    /* IE 9 */
+    -webkit-transform: skewX(-62deg);
+    /* Safari */
+    transform: skewX(-62deg);
+    /* Standard syntax */ }
+  .contact {
+    position: relative; } }
