@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+//import { Button } from 'react-router-dom';
 import './header.css';
 
 
-export default function Header() {
+export default function Header(props) {
     return (
         <div className="header">
             <section className="nav-icon">
@@ -15,9 +15,9 @@ export default function Header() {
 				</a>
 			</section>
             <section className="header-links">
-                <NavLink className="link" exact activeClassName="selected" to="/">Home</NavLink>
-                <NavLink className="link" activeClassName="selected" to="/projects">Projects</NavLink>
-                <NavLink className="link" activeClassName="selected" to="/about">About</NavLink>
+                <button className="link" onClick={() => props.goTo('home')}>Home</button>
+                <button className="link" onClick={() => props.goTo('projects')}>Projects</button>
+                <button className="link" onClick={() => props.goTo('about')}>About</button>
             </section>
         </div>
     )

@@ -13,6 +13,28 @@
     font-family: 'nunito_sansextralight';
 }
 
+.project-text-small {
+    display: none;
+}
+
+.project-text-big {
+    display: flex;
+    background-color: #74ccb4;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    p {
+        color: white;
+        text-align: center;
+        margin: auto;
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+}
+
 .box {
     position: relative;
     padding: 0.5rem;
@@ -113,11 +135,17 @@
 
     .projects {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
-    .timeline {
-        margin-top: 4rem;
+    .project-text-small {
+        display: flex;
+        color: white;
+        justify-content: center;
+    }
+
+    .project-text-big {
+        display: none;
     }
 
     .timeline ul li {

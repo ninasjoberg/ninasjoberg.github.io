@@ -24,7 +24,7 @@ export default class About extends Component{
                         <a href="https://github.com/ninasjoberg" target="_blank"><span>github</span></a>
                         <a href="https://www.linkedin.com/in/nina-sj%C3%B6berg-9aa71b22/" target="_blank"><span>linkedIn</span></a>
                         <a href="mailto: nina.sjoberg@gmail.com"><span>mail</span></a>
-                        <a href="http://www.bellpepper.se" target="_blank"><span>webshop</span></a>
+                        <a href="http://www.bellpepper.se" target="_blank"><span>silversmide</span></a>
                     </div>
                 </section>
             </div>

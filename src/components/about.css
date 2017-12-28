@@ -7,7 +7,8 @@
 
 .about {
   background-color: #2c3e50;
-  width: 80%; }
+  width: 80%;
+  height: 100vh; }
 
 .about-content {
   height: 100%;
@@ -33,7 +34,7 @@
   /* Standard syntax */ }
 
 .likes {
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
 
 .contact {
   align-self: flex-end;
@@ -65,3 +66,7 @@
     /* Standard syntax */ }
   .contact {
     position: relative; } }
+
+@media screen and (max-width: 680px) {
+  .about {
+    height: 100%; } }

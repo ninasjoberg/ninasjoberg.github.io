@@ -13,7 +13,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  position: relative;
+  z-index: 10; }
 
 .nav-icon {
   align-self: flex-start;
@@ -21,23 +23,27 @@
   position: fixed; }
 
 .header-links {
-  font-family: 'nunito_sansextralight';
   display: flex;
   flex-direction: column;
   align-content: center;
   position: fixed; }
 
 .link {
+  font-family: 'nunito_sansextralight';
   transition: all 0.3s ease-out;
   font-size: 32px;
   margin: 20px;
   text-decoration: none;
-  color: #2c3e50; }
-
-.selected {
-  transition: all 0.3s ease-in;
-  transform: translateX(-75px);
-  color: #74ccb4; }
+  color: #2c3e50;
+  border: none;
+  background-color: transparent; }
+  .link:focus {
+    outline: 0;
+    color: #74ccb4;
+    transition: all 0.3s ease-in;
+    transform: translateX(-75px); }
+  .link:active {
+    color: #74ccb4; }
 
 /* Små skärmar */
 @media screen and (max-width: 900px) {
@@ -58,10 +64,10 @@
   .link {
     font-size: 18px;
     margin: 5px; }
+    .link:focus {
+      transform: translateX(0px) translateY(10px); }
   .nav-icon {
     position: static;
     padding-top: 0;
     align-self: center;
-    margin-left: 20px; }
-  .selected {
-    transform: translateX(0px) translateY(10px); } }
+    margin-left: 20px; } }

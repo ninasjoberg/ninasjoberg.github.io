@@ -90,6 +90,10 @@ export default class Projects extends Component{
 
         return(
             <div className="projects">
+                <p className="project-text-small">tryck på projekten nedan för mer info</p>
+                <div className="project-text-big">
+                    <p>Hovra över projekten för mer info</p>
+                </div>
                 <section className="timeline">
                     <ul>
                         {projects}

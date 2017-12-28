@@ -9,6 +9,7 @@
 .about {
     background-color: #2c3e50;
     width: 80%;
+    height: 100vh;
 }
 
 
@@ -36,7 +37,7 @@
 }
 
 .likes {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .contact {
@@ -76,5 +77,12 @@
 
     .contact {
         position: relative;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .about {
+        height: 100%;
     }
 }
