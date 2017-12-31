@@ -31,7 +31,7 @@
     position: fixed;
 }
 
-.link {
+Button {
     font-family: 'nunito_sansextralight';
     transition: all 0.3s ease-out;
     font-size: 32px;
@@ -42,14 +42,14 @@
     background-color: transparent;
     &:focus {
         outline: 0;
-        color: #74ccb4;
-        transition: all 0.3s ease-in;
-        transform: translateX(-75px);
     }
-    &:active {
-        color: #74ccb4;
+}
 
-    }
+.active-menybutton {
+    outline: 0;
+    color: #74ccb4;
+    transition: all 0.3s ease-in;
+    transform: translateX(-50px);
 }
 
 
@@ -74,12 +74,13 @@
         margin-right: 20px;
     }
 
-    .link {
+    Button {
         font-size: 18px;
         margin: 5px;
-        &:focus {
-            transform: translateX(0px) translateY(10px);
-        }
+    }
+
+    .active-menybutton {
+        transform: translateX(0px) translateY(10px);
     }
 
     .nav-icon {

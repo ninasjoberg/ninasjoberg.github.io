@@ -15,6 +15,23 @@ import './projects.css';
 
 export default class Projects extends Component{
 
+    componentDidMount() {
+        window.addEventListener("scroll", this.handleScroll)
+    }
+
+    componentWillUnmount() {
+        console.log('hej', this.handleScroll);
+        window.removeEventListener("scroll", this.handleScroll);
+    }
+
+    handleScroll(){
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("info").style.opacity = "0";
+            } else {
+            document.getElementById("info").style.opacity = "1";
+        }
+    }
+
 
     render(){
 
@@ -84,14 +101,13 @@ export default class Projects extends Component{
         ]
 
         const projects = projectsArray.map((project, index) => {
-            console.log(project);
-            return <Project time={project.time} img={project.image} course={project.course} task={project.task} src={project.src}/>
+            return <Project key={index} time={project.time} img={project.image} course={project.course} task={project.task} src={project.src}/>
         })
 
         return(
             <div className="projects">
                 <p className="project-text-small">tryck på projekten nedan för mer info</p>
-                <div className="project-text-big">
+                <div className="project-text-big" id="info">
                     <p>Hovra över projekten för mer info</p>
                 </div>
                 <section className="timeline">

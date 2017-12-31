@@ -4,6 +4,7 @@ import './header.css';
 
 
 export default function Header(props) {
+
     return (
         <div className="header">
             <section className="nav-icon">
@@ -15,9 +16,9 @@ export default function Header(props) {
 				</a>
 			</section>
             <section className="header-links">
-                <button className="link" onClick={() => props.goTo('home')}>Home</button>
-                <button className="link" onClick={() => props.goTo('projects')}>Projects</button>
-                <button className="link" onClick={() => props.goTo('about')}>About</button>
+                <button className={props.currentPage === "home" ?  "active-menybutton" : "menybutton"} onClick={() => props.goTo('home')}>Home</button>
+                <button className={props.currentPage === "projects" ?  "active-menybutton" : "menybutton"} onClick={() => props.goTo('projects')}>Projects</button>
+                <button className={props.currentPage === "about" ?  "active-menybutton" : "menybutton"} onClick={() => props.goTo('about')}>About</button>
             </section>
         </div>
     )

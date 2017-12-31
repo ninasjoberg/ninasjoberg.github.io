@@ -28,7 +28,7 @@
   align-content: center;
   position: fixed; }
 
-.link {
+Button {
   font-family: 'nunito_sansextralight';
   transition: all 0.3s ease-out;
   font-size: 32px;
@@ -37,13 +37,14 @@
   color: #2c3e50;
   border: none;
   background-color: transparent; }
-  .link:focus {
-    outline: 0;
-    color: #74ccb4;
-    transition: all 0.3s ease-in;
-    transform: translateX(-75px); }
-  .link:active {
-    color: #74ccb4; }
+  Button:focus {
+    outline: 0; }
+
+.active-menybutton {
+  outline: 0;
+  color: #74ccb4;
+  transition: all 0.3s ease-in;
+  transform: translateX(-50px); }
 
 /* Små skärmar */
 @media screen and (max-width: 900px) {
@@ -61,11 +62,11 @@
     position: static;
     flex-direction: row;
     margin-right: 20px; }
-  .link {
+  Button {
     font-size: 18px;
     margin: 5px; }
-    .link:focus {
-      transform: translateX(0px) translateY(10px); }
+  .active-menybutton {
+    transform: translateX(0px) translateY(10px); }
   .nav-icon {
     position: static;
     padding-top: 0;

@@ -17,7 +17,7 @@ const routes = {
 export default class App extends Component {
 
     state = {
-        currentPage: 'home'
+        currentPage: 'home',
     }
 
     changePage = (page) => {
@@ -31,8 +31,8 @@ export default class App extends Component {
         return (
             <div className="App">
                 <div className="content">
-                    <Header goTo={this.changePage}/>
-                    <Page goTo={this.changePage}/>
+                    <Header goTo={this.changePage} currentPage={this.state.currentPage}/>
+                    <Page goTo={this.changePage} currentPage={this.state.currentPage}/>
                 </div>
             </div>
         );
